@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .bdt {
+      display: none;
+    }
+    .dnt-btn{
+        width: 80px;
+    }
+    .dnt-bd{
+        text-align: center;
+    }
+    .dlr{
+        display: none;
+    }
+  }
+  

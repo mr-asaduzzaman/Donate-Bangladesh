@@ -10,6 +10,7 @@
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="bg-green-50">
@@ -19,12 +20,12 @@
             <nav
                 class="flex justify-between items-center bg-gradient-to-b from-green-600 to-green-300 py-5 px-6 rounded-b-lg shadow-md">
                 <div class="space-x-4">
-                    <a href="./about-us.html"><button class="btn btn-outline text-white">About Us</button></a>
+                    <span class="bdt"><a href="./about-us.html"><button class="btn btn-outline text-white">About Us</button></a></span>
                     <a href="./blog.html"><button class="btn btn-outline text-white">Blog</button></a>
                 </div>
-                <div class="font-serif font-extrabold text-3xl text-white"><a href="./index.html">Donate Bangladesh</a></div>
+                <span class="dnt-bd"><div class="font-serif font-extrabold text-3xl text-white"><a href="./index.html">Donate Bangladesh</a></div></span>
                 <div class="balance bg-slate-100 px-4 py-1 rounded-lg font-bold text-lg text-green-600">
-                    💲 <span id="cash-balance">10000</span> BDT
+                    <span class="dlr">💲</span> <span id="cash-balance">10000</span> <span class="bdt">BDT</span>
                 </div>
             </nav>
         </header>
@@ -33,13 +34,13 @@
         <!-- Main Start -->
         <main class="bg-gradient-to-b from-green-200 to-green-100 py-5 px-4">
             <section id="switch-section" class="flex justify-center gap-5 mb-5">
-                <button id="donate-button" class="btn bg-green-600 text-white btn-wide shadow-lg">Donate</button>
-                <button id="history-button" class="btn btn-wide">History</button>
+                <button id="donate-button" class="btn bg-green-600 text-white btn-wide shadow-lg overflow-hidden dnt-btn">Donate</button>
+                <button id="history-button" class="btn btn-wide dnt-btn">History</button>
             </section>
 
             <section id="donate-section" class="">
                 <!-- Donation Cards Start -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-5">
                     <!-- Noakhali Card -->
                     <div class="card bg-white shadow-lg rounded-lg flex md:flex-row overflow-hidden">
                         <figure class="w-full lg:w-2/5 md:w-1/3 lg:m-3">
