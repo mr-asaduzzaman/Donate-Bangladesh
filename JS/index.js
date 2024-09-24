@@ -53,6 +53,7 @@ noakhaliButton.addEventListener('click', function () {
             document.getElementById('balanceModal').classList.remove('hidden')
             document.getElementById('error-noakhali').classList.add('hidden')
             document.getElementById('br').classList.remove('hidden')
+            
             const newNoakhaliBalance = noakhaliBalance + noakhaliInput;
             document.getElementById('noakhali-balance').innerText = newNoakhaliBalance;
 

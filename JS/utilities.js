@@ -4,8 +4,6 @@ function getInputValueByID(id){
     return inputNumber
 }
 
-
-
 function getInnerTextById(id){
     const innerText = document.getElementById(id).innerText;
     return innerText;
